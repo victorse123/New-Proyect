@@ -1,0 +1,36 @@
+.Cita{
+    background-image: #ffffff;
+    position: absolute;
+    text-align: start;
+    width: 300px;
+    background-color: aliceblue;
+    padding: 10px;
+    opacity: 60%;
+    /* border: 2px solid #ffffff; */
+    border-radius: 50px; 
+    animation: fade-in-out 6s infinite ;
+    transform: translate(0,0);
+    transition: transform 0.5s ease-in-out;
+    
+  }
+  @keyframes fade-in-out{
+    from{opacity:40%}
+    50%{opacity:80%}
+    to{opacity:40%}
+  }
+  cita:hover{
+    opacity: 1;
+  }
+  
+  .Cita p {
+    align-items:flex-start;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .Cita p:last-child {
+    margin-top: 20px;
+  }
+  .Cita.cambiar{
+    transform: translate(-300px, -300px);
+  }
